@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,8 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sanity-nextjs-site.vercel.app"),
   description: "A personal portfolio site built with Sanity and Next.js",
   openGraph: {
-    images:
-      "https://avatars.githubusercontent.com/u/91450029?v=4",
+    images: "https://avatars.githubusercontent.com/u/91450029?v=4",
   },
 };
 
@@ -26,6 +26,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-zinc-900 text-white`}>
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
