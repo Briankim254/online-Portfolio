@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.105.2",
+    "@react-three/fiber": "^8.16.1",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
     "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
+    "clsx": "^2.1.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
     "framer-motion": "^10.18.0",
@@ -23,7 +26,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sanity": "3.14.2",
+    "tailwind-merge": "^2.2.2",
     "tailwindcss": "3.3.3",
+    "three": "^0.163.0",
+    "three-globe": "^2.31.0",
     "typescript": "5.1.6"
   },
   "devDependencies": {
