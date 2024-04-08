@@ -11,7 +11,7 @@ export default function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
-    showAtmosphere: true,
+    showAtmosphere: false,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
     emissive: "#062056",
