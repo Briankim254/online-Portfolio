@@ -395,8 +395,8 @@ export default function GlobeDemo() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-3 h-screen md:h-auto w-full">
-      <div className="max-w-7xl w-full relative overflow-hidden h-full md:h-[40rem]">
+    <div className="py-3 h-screen md:h-auto md:block hidden w-full">
+      <div className=" relative  h-full lg:h-[30rem]">
         <World data={sampleArcs} globeConfig={globeConfig} />
       </div>
     </div>

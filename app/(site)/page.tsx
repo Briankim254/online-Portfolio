@@ -37,7 +37,7 @@ export default async function Home() {
               </ul>
             </div>
           ))}
-        {/* <HeroSvg /> */}
+        <HeroSvg />
         <GlobeDemo />
       </section>
       <Job />
