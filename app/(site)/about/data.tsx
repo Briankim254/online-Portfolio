@@ -8,7 +8,7 @@ export default async function Data() {
   const profile: ProfileType[] = await getProfile();
 
   return (
-    <div>
+    <div className="my-4">
       {profile &&
         profile.map((data) => (
           <div key={data._id}>
