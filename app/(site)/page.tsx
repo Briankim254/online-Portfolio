@@ -36,7 +36,6 @@ export default async function Home() {
               </ul>
             </div>
           ))}
-        <HeroSvg />
         <GlobeDemo />
       </section>
       <Job />
