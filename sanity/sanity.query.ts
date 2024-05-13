@@ -24,7 +24,8 @@ export async function getProfile() {
 
 export async function getJob() {
   return client.fetch(
-    groq`*[_type == "job"]{
+    groq`*[_type == "job"]| order(startDate desc){
+      _id,
       _id,
       name,
       jobTitle,
