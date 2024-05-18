@@ -3,9 +3,17 @@ import type { ProfileType } from "@/types";
 import HeroSvg from "./icons/HeroSvg";
 import Job from "./components/Job";
 import GlobeDemo from "./components/AutoGlobe/page";
+import { FlipWords } from "@/app/(site)/components/ui/flip-words";
 
 export default async function Home() {
   const profile: ProfileType[] = await getProfile();
+  const words = [
+    "Data Scientist",
+    "Software Engineer",
+    "FrontEnd Developer",
+    "IT consultant",
+    "ML enthusiast",
+  ];
 
   return (
     <main className="max-w-7xl mx-auto lg:px-16 px-6">
@@ -13,8 +21,9 @@ export default async function Home() {
         {profile &&
           profile.map((data) => (
             <div key={data._id} className="lg:max-w-2xl max-w-2xl">
-              <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
-                {data.headline}
+              <h1 className="text-3xl font-normal tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full text-neutral-600 dark:text-neutral-400">
+                I&apos;m Brian Kimutai Rotich, <br />
+                a <FlipWords words={words} />
               </h1>
               <p className="text-base text-zinc-400 leading-relaxed">
                 {data.shortBio}

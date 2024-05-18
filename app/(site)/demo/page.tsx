@@ -1,71 +1,17 @@
-import React from 'react'
-import OrbitingCircles from '../components/magicui/orbiting-circles';
-import { FaLaravel, FaPhp, FaPython, FaReact } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import React from "react";
+import { FlipWords } from "../components/ui/flip-words";
 
-function page() {
+
+export default function page() {
+  const words = ["Data Scientist", "Software Engineer", "Web Developer", "Consultant", "ML Enthusiast"];
   return (
-    <div className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg  ">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        Circles
-      </span>
- 
-      {/* Inner Circles */}
-      <OrbitingCircles
-        className="h-[30px] w-[30px] border-none bg-transparent"
-        duration={20}
-        delay={20}
-        radius={80}
-      >
-        <Icons.whatsapp />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="h-[30px] w-[30px] border-none bg-transparent"
-        duration={20}
-        delay={10}
-        radius={80}
-      >
-        <Icons.notion />
-      </OrbitingCircles>
- 
-      {/* Outer Circles (reverse) */}
-      <OrbitingCircles
-        className="h-[50px] w-[50px] border-none bg-transparent"
-        reverse
-        radius={190}
-        duration={20}
-      >
-        <Icons.googleDrive />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="h-[50px] w-[50px] border-none bg-transparent"
-        reverse
-        radius={190}
-        duration={20}
-        delay={20}
-      >
-        <Icons.gitHub />
-      </OrbitingCircles>
+    <div className="h-[40rem] flex justify-center items-center px-4">
+      <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+        Build
+        <FlipWords words={words} /> <br />
+        websites 
+      </div>
     </div>
   );
 }
- 
-const Icons = {
-  gitHub: () => (
-    <FaGithub />
-  ),
-  notion: () => (
-    <FaPhp />
-  ),
-  openai: () => (
-    <FaReact />
-  ),
-  googleDrive: () => (
-    <FaPython />
-  ),
-  whatsapp: () => (
-    <FaLaravel />
-  ),
-};
 
-export default page
