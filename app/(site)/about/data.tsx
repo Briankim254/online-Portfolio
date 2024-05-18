@@ -3,6 +3,7 @@ import { getProfile } from "@/sanity/sanity.query";
 import type { ProfileType } from "@/types";
 import { PortableText } from "@portabletext/react";
 import { BiEnvelope, BiFile } from "react-icons/bi";
+import Skills from "./skills";
 
 export default async function Data() {
   const profile: ProfileType[] = await getProfile();
@@ -75,8 +76,10 @@ export default async function Data() {
                 ))}
               </ul>
             </section>
+            <Skills />
           </div>
         ))}
     </div>
   );
 }
+

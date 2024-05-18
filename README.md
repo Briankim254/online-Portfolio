@@ -34,5 +34,5 @@ To run tests, run the following command:
 npm test
 ```
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at <a href="mailto:kimutaibrian560@gmail.com">
+If you have any questions about the repo, open an issue or contact me directly at <a href="mailto:kimutaibrian560@gmail.com"> kimutaibrian560@gmail.com</a>
 
