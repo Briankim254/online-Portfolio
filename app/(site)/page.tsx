@@ -11,8 +11,8 @@ export default async function Home() {
     "Data Scientist",
     "Software Engineer",
     "FrontEnd Developer",
-    "IT consultant",
-    "ML enthusiast",
+    "ITconsultant",
+    "MLenthusiast",
   ];
 
   return (
