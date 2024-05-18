@@ -4,7 +4,7 @@ import { FaLaravel, FaPhp, FaPython, FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 
-export default  function Skills() {
+export default function Skills() {
   return (
     <div className="relative flex h-[500px] w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg  ">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
@@ -70,10 +70,10 @@ export default  function Skills() {
 }
 
 const Icons = {
-  gitHub: () => <FaGithub />,
-  php: () => <FaPhp />,
-  React: () => <FaReact />,
-  JavaScript: () => <IoLogoJavascript />,
-  python: () => <FaPython />,
-  Laravel: () => <FaLaravel />,
+  gitHub: () => <FaGithub color="" size={30} />,
+  php: () => <FaPhp size={30} />,
+  React: () => <FaReact color="lightblue" size={30} />,
+  JavaScript: () => <IoLogoJavascript color="yellow" size={30} />,
+  python: () => <FaPython size={30} />,
+  Laravel: () => <FaLaravel color="red" size={30} />,
 };
